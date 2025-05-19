@@ -5,6 +5,15 @@ st.set_page_config(page_title="🎯 PR Eazy Betz", layout="wide")
 
 st.title("📊 Generic 12x32 Table")
 
+# Create dummy data
+rows = 32
+cols = 12
+
+data = [[f"Row {i+1}, Col {j+1}" for j in range(cols)] for i in range(rows)]
+column_names = [f"Column {j+1}" for j in range(cols)]
+
+df = pd.DataFrame(data, columns=column_names)
+
 # Placeholder table headers
 column_names = [f"Column {j+1}" for j in range(cols)]
 
@@ -16,6 +25,4 @@ options_col9 = ['']
 with st.expander('NRL (National Rugby League)'):
     st.write("### Match No.1")
 
-# Create dummy data
-rows = 32
-cols = 12
+
