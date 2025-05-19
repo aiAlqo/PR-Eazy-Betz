@@ -9,7 +9,7 @@ st.title("📊 Generic 12x32 Table")
 rows = 32
 cols = 12
 
-data = [[f"Row {i+1}, Col {j+1}" for j in range(cols)} for i in range(rows)]
+data = [[f"Row {i+1}, Col {j+1}" for j in range(cols)] for i in range(rows)]
 column_names = [f"Column {j+1}" for j in range(cols)]
 
 df = pd.DataFrame(data, columns=column_names)
