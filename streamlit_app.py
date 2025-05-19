@@ -19,3 +19,7 @@ options_col9 = ['']
 # Table layout using columns
 with st.expander('NRL (National Rugby League)'):
     st.write("### Match No.1")
+
+# Create dummy data
+rows = 32
+cols = 12
