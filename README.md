@@ -1,13 +1,10 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 🏉 Pacific Racing Eazy Betz 
 
-Description of the app ...
+This App is to provide a fast, easy to use and convenient betting slip maker
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://preazybetz.streamlit.app/)
 
 ## GitHub Codespaces
 
