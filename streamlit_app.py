@@ -8,7 +8,7 @@ CSV_URL = "https://raw.githubusercontent.com/aiAlqo/PR-Eazy-Betz/refs/heads/mast
 def load_data(url):
     df = pd.read_csv(url)
     df["Race"] = df["Race"].fillna(method="ffill")
-    df.columns = ["Track Code", "Race", "No", "Team 1", "Odds 1", "No.1", "Team 2", "Odds 2", "Draw", "Unknown"]
+    df.columns = ["Track Code", "Race", "No 1", "Team 1", "Odds 1", "No 2", "Team 2", "Odds 2"]
     df = df[df["Team 1"].notna() | df["Team 2"].notna()]
     return df
 
