@@ -12,10 +12,15 @@ TAX_RATE = 0.13
 # ---------- FUNCTIONS ----------
 @st.cache_data
 def load_data(url):
-    df = pd.read_csv(url)
-    df.columns = ["Track Code", "Race", "Match", "Category", "No", "Bet", "Odds"]
-    df["Match"] = df["Match"].fillna(method="ffill")
-    return df[df["Bet"].notna()]
+    try:
+        df = pd.read_csv('https://raw.githubusercontent.com/aiAlqo/PR-Eazy-Betz/refs/heads/master/Data/NRL1_2.csv')
+        df.columns = ["Track Code", "Race", "Match", "Category", "No", "Bet", "Odds"]
+        df["Match"] = df["Match"].fillna(method="ffill")
+        return df[df["Bet"].notna()]
+    except Exception as e:
+        st.error(f"Error loading CSV from URL: https://raw.githubusercontent.com/aiAlqo/PR-Eazy-Betz/refs/heads/master/Data/NRL1_2.csv")
+        st.exception(e)
+        return pd.DataFrame(columns=["Track Code","Race", "Match", "Category", "No", "Bet", "Odds"])
 
 def get_raw_github_url(filename):
     return f"https://raw.githubusercontent.com/aiAlqo/PR-Eazy-Betz/Data/NRL1_2.csv"
