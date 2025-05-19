@@ -14,15 +14,10 @@ column_names = [f"Column {j+1}" for j in range(cols)]
 
 df = pd.DataFrame(data, columns=column_names)
 
-# Placeholder table headers
-column_names = [f"Column {j+1}" for j in range(cols)]
-
 # Define selectable options
 options_col5 = ['']
 options_col9 = ['']
 
 # Table layout using columns
 with st.expander('NRL (National Rugby League)'):
-    st.write("### Match No.1")
-
-
+    st.dataframe(df, use_container_width=True)
