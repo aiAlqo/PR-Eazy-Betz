@@ -1,0 +1,129 @@
+﻿Track Code,Race,No 1,Team 1, Odds 1 ,No 2,Team 2, Odds 2 
+00,1,1,Brisbane Broncos, 2.40 ,2,Canterbury Bulldogs, 1.55 
+00,2,1,Brisbane (+4.5), 1.90 ,2,Canterbury (-4.5), 1.90 
+00,3,1,Brisbane (1-12), 3.80 ,2,Canterbury (1-12), 3.00 
+00,3,3,Brisbane (13+), 6.00 ,4,Canterbury (13+), 2.90 
+00,3,5,Draw, 17.00 ,,,  
+00,4,1,Brisbane Try, 2.10 ,2,Canterbury Try, 1.70 
+00,4,3,Brisbane P Goal, 6.20 ,4,Canterbury P Goal, 4.90 
+00,4,5,Brisbane F Goal, 51.00 ,6,Canterbury F Goal, 51.00 
+00,5,1,Brisbane / Brisbane, 3.50 ,2,Canterbury / Canterbury, 2.00 
+00,5,3,Brisbane / Canterbury, 7.00 ,4,Canterbury/Brisbane, 9.50 
+00,5,5,Brisbane / Draw, 34.00 ,6,Canterbury / Draw, 34.00 
+00,5,7,Draw / Brisbane, 21.00 ,8,Draw / Canterbury, 15.00 
+00,5,9,Draw / Draw, 67.00 ,,,  
+00,6,1,Brisbane 1-4, 6.50 ,2,Canterbury 1-4, 5.75 
+00,6,3,Brisbane 5-8, 7.25 ,4,Canterbury 5-8, 6.00 
+00,6,5,Brisbane 9+, 5.75 ,6,Canterbury 9+, 3.25 
+00,6,7,Draw at Half Time, 9.00 ,,,  
+00,7,1,Brisbane 1-10, 3.90 ,2,Canterbury 1-10, 3.00 
+00,7,3,Brisbane 11-20, 8.00 ,4,Canterbury 11-20, 4.10 
+00,7,5,Brisbane 21-30, 20.00 ,6,Canterbury 21-30, 7.50 
+00,7,7,Brisbane 31-40, 46.00 ,8,Canterbury 31-40, 17.00 
+00,7,9,Brisbane 41-50, 81.00 ,10,Canterbury 41-50, 41.00 
+00,7,11,Brisbane 51+, 101.00 ,12,Canterbury 51+, 76.00 
+00,7,13,Draw, 17.00 ,,,  
+00,8,1,Over 42.5, 2.00 ,2,Under 42.5, 1.80 
+00,9,1,0-10 Points, 56.00 ,2,11-20 Points, 15.00 
+00,9,3,21-30 Points, 5.60 ,4,31-40 Points, 3.60 
+00,9,5,41-50 Points, 3.15 ,6,51-60 Points, 4.30 
+00,9,7,61-70 Points, 8.50 ,8,71+ Points, 15.00 
+00,10,1,0-2 Tries, 51.00 ,2,3-4 Tries, 7.75 
+00,10,3,5-6 Tries, 3.60 ,4,7-8 Tries, 2.80 
+00,10,5,9-10 Tries, 3.90 ,6,11+ Tries, 6.50 
+00,11,1,Sydney Roosters, 1.80 ,2,St. George Illawarra, 2.10 
+00,12,1,Syd Roosters (-1.5), 1.90 ,2,St. George Ill (+1.5), 1.90 
+00,13,1,Syd Roosters (1-12), 3.20 ,2,St. George Ill (1-12), 3.50 
+00,13,3,Syd Roosters (13+), 3.40 ,4,St. George Ill (13+), 4.50 
+00,13,5,Draw, 17.00 ,,,  
+00,14,1,Syd Roosters Try, 1.85 ,2,St. George Ill Try, 1.95 
+00,14,3,Syd Roosters P Goal, 5.20 ,4,St. George Ill P Goal, 6.10 
+00,14,5,Syd Roosters F Goal, 51.00 ,6,St. George Ill F Goal, 51.00 
+00,15,1,Syd Roosters /Syd Roosters, 2.40 ,2,St. George Ill / St. George Ill, 2.90 
+00,15,3,Syd Roosters /St. George Ill, 8.50 ,4,St. George Ill/Syd Roosters, 7.50 
+00,15,5,Syd Roosters / Draw, 34.00 ,6,St. George Ill / Draw, 34.00 
+00,15,7,Draw / Syd Roosters, 15.00 ,8,Draw / St. George Ill, 17.00 
+00,15,9,Draw / Draw, 67.00 ,,,  
+00,16,1,Syd Roosters 1-4, 6.50 ,2,St. George Ill 1-4, 6.50 
+00,16,3,Syd Roosters 5-8, 7.00 ,4,St. George Ill 5-8, 7.50 
+00,16,5,Syd Roosters 9+, 3.50 ,6,St. George Ill 9+, 4.00 
+00,16,7,Draw at Half Time, 9.00 ,,,  
+00,17,1,Syd Roosters 1-10, 3.20 ,2,St. George Ill 1-10, 3.50 
+00,17,3,Syd Roosters 11-20, 4.90 ,4,St. George Ill 11-20, 16.00 
+00,17,5,Syd Roosters 21-30, 9.50 ,6,St. George Ill 21-30, 13.00 
+00,17,7,Syd Roosters 31-40, 21.00 ,8,St. George Ill 31-40, 31.00 
+00,17,9,Syd Roosters 41-50, 51.00 ,10,St. George Ill 41-50, 67.00 
+00,17,11,Syd Roosters 51+, 81.00 ,12,St. George Ill 51+, 91.00 
+00,17,13,Draw, 17.00 ,,,  
+00,18,1,Over 45.5, 1.90 ,2,Under 45.5, 1.90 
+00,19,1,0-10 Points, 76.00 ,2,11-20 Points, 21.00 
+00,19,3,21-30 Points, 7.50 ,4,31-40 Points, 4.10 
+00,19,5,41-50 Points, 3.15 ,6,51-60 Points, 3.75 
+00,19,7,61-70 Points, 6.40 ,8,71+ Points, 10.00 
+00,20,1,0-2 Tries, 41.00 ,2,3-4 Tries, 12.00 
+00,20,3,5-6 Tries, 4.80 ,4,7-8 Tries, 3.05 
+00,20,5,9-10 Tries, 3.25 ,6,11+ Tries, 4.20 
+00,21,1,New Zealand Warriors, 1.35 ,2,Newcastle Knights, 3.25 
+00,22,1,NZ Warriors (-9.5), 2.00 ,2,Newcastle (+9.5), 1.80 
+00,23,1,NZ Warriors (1-12), 3.10 ,2,Newcastle (1-12), 4.20 
+00,23,3,NZ Warriors (13+), 2.35 ,4,Newcastle (13+), 7.50 
+00,23,5,Draw, 21.00 ,,,  
+00,24,1,NZ Warriors Try, 1.65 ,2,Newcastle Try, 2.25 
+00,24,3,NZ Warriors P Goal, 5.00 ,4,Newcastle P Goal, 6.50 
+00,24,5,NZ Warriors F Goal, 51.00 ,6,Newcastle F Goal, 51.00 
+00,25,1,NZ Warriors/NZ Warriors, 1.70 ,2,Newcastle /Newcastle, 5.00 
+00,25,3,NZ Warriors/ Newcastle, 11.00 ,4,Newcastle /NZ Warriors, 7.00 
+00,25,5,NZ Warriors / Draw, 34.00 ,6,Newcastle / Draw, 41.00 
+00,25,7,Draw / NZ Warriors, 13.00 ,8,Draw / Newcastle, 23.00 
+00,25,9,Draw / Draw, 67.00 ,,,  
+00,26,1,NZ Warriors 1-4, 6.00 ,2,Newcastle 1-4, 7.00 
+00,26,3,NZ Warriors 5-8, 6.00 ,4,Newcastle 5-8, 9.00 
+00,26,5,NZ Warriors 9+, 2.70 ,6,Newcastle 9+, 6.00 
+00,26,7,Draw at Half Time, 10.00 ,,,  
+00,27,1,NZ Warriors 1-10, 3.10 ,2,Newcastle 1-10, 4.70 
+00,27,3,NZ Warriors 11-20, 3.70 ,4,Newcastle 11-20, 10.50 
+00,27,5,NZ Warriors 21-30, 5.80 ,6,Newcastle 21-30, 26.00 
+00,27,7,NZ Warriors 31-40, 11.50 ,8,Newcastle 31-40, 56.00 
+00,27,9,NZ Warriors 41-50, 29.00 ,10,Newcastle 41-50, 91.00 
+00,27,11,NZ Warriors 51+, 56.00 ,12,Newcastle 51+, 101.00 
+00,27,13,Draw, 21.00 ,,,  
+00,28,1,Over 44.5, 1.95 ,2,Under 44.5, 1.80 
+00,29,1,0-10 Points, 71.00 ,2,11-20 Points, 19.00 
+00,29,3,21-30 Points, 6.75 ,4,31-40 Points, 3.90 
+00,29,5,41-50 Points, 3.15 ,6,51-60 Points, 3.90 
+00,29,7,61-70 Points, 7.00 ,8,71+ Points, 11.00 
+00,30,1,0-2 Tries, 61.00 ,2,3-4 Tries, 11.50 
+00,30,3,5-6 Tries, 4.30 ,4,7-8 Tries, 2.90 
+00,30,5,9-10 Tries, 3.35 ,6,11+ Tries, 5.00 
+00,31,1,Melbourne Storm, 1.20 ,2,South Sydney Rabbitohs, 4.80 
+00,32,1,Melbourne (-13.5), 1.70 ,2,Souths (+13.5), 2.00 
+00,33,1,Melbourne (1-12), 3.50 ,2,Souths (1-12), 6.50 
+00,33,3,Melbourne (13+), 1.70 ,4,Souths (13+), 11.00 
+00,33,5,Draw, 23.00 ,,,  
+00,34,1,Melbourne Try, 1.50 ,2,Souths Try, 2.55 
+00,34,3,Melbourne P Goal, 5.00 ,4,Souths P Goal, 6.80 
+00,34,5,Melbourne F Goal, 51.00 ,6,Souths F Goal, 51.00 
+00,35,1,Melbourne/Melbourne, 1.40 ,2,Souths / Souths, 7.00 
+00,35,3,Melbourne/ Souths, 15.00 ,4,Souths / Melbourne, 7.00 
+00,35,5,Melbourne/ Draw, 41.00 ,6,Souths / Draw, 41.00 
+00,35,7,Draw / Melbourne, 13.00 ,8,Draw / Souths, 34.00 
+00,35,9,Draw / Draw, 81.00 ,,,  
+00,36,1,Melbourne 1-4, 6.50 ,2,Souths 1-4, 8.50 
+00,36,3,Melbourne 5-8, 6.00 ,4,Souths 5-8, 11.00 
+00,36,5,Melbourne 9+, 2.10 ,6,Souths 9+, 8.00 
+00,36,7,Draw at Half Time, 11.00 ,,,  
+00,37,1,Melbourne 1-10, 3.55 ,2,Souths 1-10, 6.75 
+00,37,3,Melbourne 11-20, 3.40 ,4,Souths 11-20, 17.00 
+00,37,5,Melbourne 21-30, 4.30 ,6,Souths 21-30, 41.00 
+00,37,7,Melbourne 31-40, 7.00 ,8,Souths 31-40, 76.00 
+00,37,9,Melbourne 41-50, 15.00 ,10,Souths 41-50, 101.00 
+00,37,11,Melbourne 51+, 25.00 ,12,Souths 51+, 101.00 
+00,37,13,Draw, 23.00 ,,,  
+00,38,1,Over 48.5, 1.90 ,2,Under 48.5, 1.90 
+00,39,1,0-10 Points, 91.00 ,2,11-20 Points, 26.00 
+00,39,3,21-30 Points, 9.00 ,4,31-40 Points, 4.50 
+00,39,5,41-50 Points, 3.15 ,6,51-60 Points, 3.55 
+00,39,7,61-70 Points, 5.75 ,8,71+ Points, 8.50 
+00,40,1,0-2 Tries, 81.00 ,2,3-4 Tries, 13.00 
+00,40,3,5-6 Tries, 5.40 ,4,7-8 Tries, 3.20 
+00,40,5,9-10 Tries, 3.05 ,6,11+ Tries, 3.60 
