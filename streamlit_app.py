@@ -9,52 +9,27 @@ st.title("📊 Generic 12x32 Table")
 rows = 32
 cols = 12
 
-# Sample column names
+# Placeholder table headers
 column_names = [f"Column {j+1}" for j in range(cols)]
 
-# Placeholder data
-data = [[f"R{i+1}C{j+1}" for j in range(cols)] for i in range(rows)]
-df = pd.DataFrame(data, columns=column_names)
+# Define selectable options
+options_col5 = ['Option A', 'Option B', 'Option C']
+options_col9 = ['Yes', 'No']
 
-# Options for radio buttons
-radio_options = ["-", "✔️", "❌"]
+# Table layout using columns
+st.write("### Table with Radio Buttons in Column 5 and Column 9")
 
-# Show interactive table row by row
-st.write("### Select options for Column 5 and Column 9")
-
-# Store user selections
-selections = []
-
-# Table header
-header_cols = st.columns(cols)
-for idx, col in enumerate(header_cols):
-    col.markdown(f"**{column_names[idx]}**")
-
-# Table rows
+# Loop over rows
 for i in range(rows):
-    cols_streamlit = st.columns(cols)
-    row_selections = []
+    cols_ui = st.columns(cols)
 
     for j in range(cols):
-        if j == 4 or j == 8:  # Col 5 and 9 (index starts at 0)
-            choice = cols_streamlit[j].radio(
-                label="",
-                options=radio_options,
-                index=0,
-                key=f"row{i}_col{j}",
-                label_visibility="collapsed",
-                horizontal=True
-            )
-            row_selections.append(choice)
-            cols_streamlit[j].markdown("")  # Optional: add a spacer
+        if j == 4:  # Column 5 (index 4)
+            with cols_ui[j]:
+                st.radio(f"row_{i}_col5", options_col5, key=f"r{i}_c5", label_visibility="collapsed")
+        elif j == 8:  # Column 9 (index 8)
+            with cols_ui[j]:
+                st.radio(f"row_{i}_col9", options_col9, key=f"r{i}_c9", label_visibility="collapsed")
         else:
-            cols_streamlit[j].markdown(df.iloc[i, j])
-            row_selections.append(df.iloc[i, j])
-
-    selections.append(row_selections)
-
-# Optionally show selections
-if st.button("Show Selections"):
-    st.write("### Your Current Selections (Col 5 & 9):")
-    for idx, row in enumerate(selections):
-        st.write(f"Row {idx+1}: Col 5 → {row[4]}, Col 9 → {row[8]}")
+            with cols_ui[j]:
+                st.text_input(f"", value=f"Row {i+1}, Col {j+1}", key=f"r{i}_c{j}", label_visibility="collapsed")
