@@ -1,23 +1,25 @@
 import streamlit as st
 import pandas as pd
 
-# Load CSV data
-df = pd.read_csv("https://github.com/aiAlqo/PR-Eazy-Betz/blob/master/Data/NRL_Round8_Tipping_Guide.csv")
+# Safe CSV loading
+try:
+    df = pd.read_csv("NRL_Round8_Tipping_Guide.csv", engine="python", on_bad_lines='skip')
+except pd.errors.ParserError as e:
+    st.error(f"Error reading CSV: {e}")
+    st.stop()
 
-# Group the data by 'Match' and create separate dataframes
+# Group by 'Match'
 grouped = df.groupby("Match")
 
 st.title("NRL Round 8 Tipping Guide")
 
+# Display each match's data with checkboxes
 for match_title, match_df in grouped:
-    # Drop the 'Match' column as instructed
-    display_df = match_df.drop(columns=["Match"])
-    
-    # Display a title for each match
-    st.header(match_title)
+    st.subheader(match_title)
 
-    # Show each row with a checkbox
-    for index, row in display_df.iterrows():
-        # Generate label for the checkbox
-        label = f"{row.to_dict()}"
-        st.checkbox(label=label, key=f"{match_title}_{index}")
+    # Drop 'Match' column
+    display_df = match_df.drop(columns=["Match"], errors='ignore')
+
+    for idx, row in display_df.iterrows():
+        label = " | ".join([f"{col}: {val}" for col, val in row.items()])
+        st.checkbox(label, key=f"{match_title}_{idx}")
