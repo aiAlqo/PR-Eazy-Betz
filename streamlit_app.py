@@ -10,6 +10,9 @@ except pd.errors.ParserError as e:
 
 st.title("NRL Round 8 Tipping Guide")
 
+# Group by 'Match'
+grouped = df.groupby("Match")
+
 # Display each match's data with checkboxes
 for match_title, match_df in grouped:
     st.subheader(match_title)
