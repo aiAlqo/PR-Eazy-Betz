@@ -3,7 +3,7 @@ import pandas as pd
 
 # Safe CSV loading
 try:
-    df = pd.read_csv("NRL_Round8_Tipping_Guide.csv", engine="python", on_bad_lines='skip')
+    df = pd.read_csv("https://github.com/aiAlqo/PR-Eazy-Betz/blob/master/Data/NRL_Round8_Tipping_Guide.csv", engine="python", on_bad_lines='skip')
 except pd.errors.ParserError as e:
     st.error(f"Error reading CSV: {e}")
     st.stop()
