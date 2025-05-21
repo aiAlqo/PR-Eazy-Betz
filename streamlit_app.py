@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load CSV data
-df = pd.read_csv("https://raw.githubusercontent.com/aiAlqo/PR-Eazy-Betz/refs/heads/master/Data/NRL1_2.csv")
+df = pd.read_csv("https://github.com/aiAlqo/PR-Eazy-Betz/blob/master/Data/NRL_Round8_Tipping_Guide.csv")
 
 # Group the data by 'Match' and create separate dataframes
 grouped = df.groupby("Match")
