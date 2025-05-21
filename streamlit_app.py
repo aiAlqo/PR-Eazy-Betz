@@ -3,62 +3,38 @@ import pandas as pd
 
 st.set_page_config(page_title="🎯 PR Eazy Betz", layout="wide")
 
-st.title("📊 Generic 12x32 Table")
+import streamlit as st
+import pandas as pd
 
-# Create dummy data
-rows = 32
-cols = 12
+# Create a 9-column, 3-row dataframe
+df = pd.DataFrame(
+    {
+        "A": [1, 2, 3],
+        "B": [4, 5, 6],
+        "C": [False, False, False],  # Checkbox column (3rd)
+        "D": [7, 8, 9],
+        "E": [10, 11, 12],
+        "F": [False, False, False],  # Checkbox column (6th)
+        "G": [13, 14, 15],
+        "H": [16, 17, 18],
+        "I": [19, 20, 21],
+    }
+)
 
-data = [[f"Row {i+1}, Col {j+1}" for j in range(cols)] for i in range(rows)]
-column_names = [f"Column {j+1}" for j in range(cols)]
-
-df = pd.DataFrame(data, columns=column_names)
-
-# Define selectable options
-options_col5 = ['']
-options_col9 = ['']
-
-# Table layout using columns
-with st.expander('NRL (National Rugby League)'):
-    st.dataframe(df, use_container_width=True)
-
-# Sample data
-data = {
-    'Item': ['Apples', 'Bananas', 'Cherries'],
-    'Price per unit': [1.5, 0.8, 2.0],
-    'Available Qty': [100, 200, 150]
+# Configure columns 3 and 6 as checkboxes
+column_config = {
+    "C": st.column_config.CheckboxColumn("Select C"),
+    "F": st.column_config.CheckboxColumn("Select F"),
 }
-df = pd.DataFrame(data)
 
-st.title("Interactive Table Selector")
+# Make only the checkbox columns editable
+st.data_editor(
+    df,
+    column_config=column_config,
+    disabled=["A", "B", "D", "E", "G", "H", "I"],
+    hide_index=True,
+)
 
-# Display table with checkboxes
-st.subheader("Select items:")
-selected_items = []
-
-for i, row in df.iterrows():
-    if st.checkbox(f"{row['Item']} (${row['Price per unit']}/unit)", key=row['Item']):
-        qty = st.number_input(f"Enter quantity for {row['Item']} (max {row['Available Qty']}):", 
-                              min_value=0, 
-                              max_value=row['Available Qty'], 
-                              key=f"qty_{row['Item']}")
-        selected_items.append({
-            'Item': row['Item'],
-            'Unit Price': row['Price per unit'],
-            'Quantity': qty,
-            'Total': qty * row['Price per unit']
-        })
-
-# Show result
-if selected_items:
-    st.subheader("Your Selection Summary")
-    result_df = pd.DataFrame(selected_items)
-    st.dataframe(result_df)
-
-    grand_total = result_df['Total'].sum()
-    st.success(f"**Grand Total: ${grand_total:.2f}**")
-else:
-    st.info("Select at least one item to see calculations.")
 
 # Guide preparations
 with st.sidebar:
