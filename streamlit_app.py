@@ -1,25 +1,35 @@
 import streamlit as st
 import pandas as pd
 
-# Safe CSV loading
-try:
-    df = pd.read_csv("https://raw.githubusercontent.com/aiAlqo/PR-Eazy-Betz/refs/heads/master/Data/NRL_Round8_Tipping_Guide.csv", engine="python", on_bad_lines='skip')
-except pd.errors.ParserError as e:
-    st.error(f"Error reading CSV: {e}")
+# Load the correct raw CSV
+csv_url = "https://raw.githubusercontent.com/aiAlqo/PR-Eazy-Betz/master/Data/NRL_Round8_Tipping_Guide.csv"
+df = pd.read_csv(csv_url, engine="python", on_bad_lines='skip')
+
+# Check for the 'Match' column
+if "Match" not in df.columns:
+    st.error("Missing expected column: 'Match'")
+    st.write("Available columns:", df.columns.tolist())
+    st.dataframe(df.head())
     st.stop()
+
+# Group by match
+grouped = df.groupby("Match")
 
 st.title("NRL Round 8 Tipping Guide")
 
-# Group by 'Match'
-grouped = df.groupby("Match")
-
-# Display each match's data with checkboxes
+# Loop through each match
 for match_title, match_df in grouped:
     st.subheader(match_title)
 
-    # Drop 'Match' column
+    # Drop the Match column for display
     display_df = match_df.drop(columns=["Match"], errors='ignore')
 
+    # Display each row as a "checkbox + table row"
     for idx, row in display_df.iterrows():
-        label = " | ".join([f"{col}: {val}" for col, val in row.items()])
-        st.checkbox(label, key=f"{match_title}_{idx}")
+        with st.container():
+            cols = st.columns([0.1, 2])  # One column for checkbox, one for table row
+            with cols[0]:
+                st.checkbox("", key=f"{match_title}_{idx}")
+            with cols[1]:
+                # Display the row like a table row
+                st.markdown(" | ".join(f"**{col}**: {val}" for col, val in row.items()))
