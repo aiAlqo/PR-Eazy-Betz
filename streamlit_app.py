@@ -8,9 +8,6 @@ except pd.errors.ParserError as e:
     st.error(f"Error reading CSV: {e}")
     st.stop()
 
-# Group by 'Match'
-grouped = df.groupby("Match")
-
 st.title("NRL Round 8 Tipping Guide")
 
 # Display each match's data with checkboxes
